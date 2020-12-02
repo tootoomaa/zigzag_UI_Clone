@@ -7,13 +7,15 @@
 
 import Foundation
 import UIKit
+import SnapKit
+import Then
 
 class MainTopView: UIView {
     // MARK: - Properties
     let height: CGFloat = 35 // view Height will 70
     
     let titleLabel = UILabel().then {
-        $0.text = "zigzag"
+        $0.text = MainConstraints.titleLabelText
         $0.textColor = .black
         $0.font = mainTitleFont
     }
@@ -29,7 +31,7 @@ class MainTopView: UIView {
     }
     
     let searchLabel = UILabel().then {
-        $0.text = "검색어를 입력해주세요"
+        $0.text = MainConstraints.searchViewPlaceHolder
         $0.textColor = .systemGray2
     }
     
@@ -64,7 +66,8 @@ class MainTopView: UIView {
         }
         
         titleLabel.snp.makeConstraints {
-            $0.top.leading.equalTo(safeGuide).offset(20)
+            $0.top.equalTo(safeGuide).offset(20)
+            $0.leading.equalTo(safeGuide).offset(20)
         }
         
         cartButton.snp.makeConstraints {

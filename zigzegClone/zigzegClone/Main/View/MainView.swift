@@ -12,15 +12,29 @@ import Then
 
 class MainView: UIView {
     // MARK: - Properties
-    let mainTopViewHeight: CGFloat = 70
     let mainTopView = MainTopView()
     
-    let topCategorySelectView = TopCategorySelectView()
+    lazy var topCategorySelectSegControl = UISegmentedControl(items: MainConstraints.topSelectCategoryList).then {
+        $0.removeBorder()
+        $0.selectedSegmentIndex = 0
+    }
+    
+    let tableView = UITableView().then {
+        let headerView = MainTableHeaderView()
+        $0.backgroundColor = .white
+        $0.tableHeaderView = headerView
+        $0.tableHeaderView?.frame.size.height = 120
+    }
+    
+    let buttomView = UIView().then {
+        $0.backgroundColor = .systemGray4
+    }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         
         configureLayout()
+        
     }
     
     required init?(coder: NSCoder) {
@@ -28,20 +42,32 @@ class MainView: UIView {
     }
     
     private func configureLayout() {
-        
-        [mainTopView, topCategorySelectView].forEach {
+        let safeGuide = self.safeAreaLayoutGuide
+        [mainTopView, tableView, topCategorySelectSegControl, buttomView].forEach {
             addSubview($0)
         }
         
         mainTopView.snp.makeConstraints {
-            $0.top.leading.trailing.equalTo(self.safeAreaLayoutGuide)
-            $0.height.equalTo(mainTopViewHeight)
+            $0.top.equalTo(safeGuide)
+            $0.leading.trailing.equalTo(safeGuide)
+            $0.height.equalTo(MainConstraints.topViewHeight)
         }
         
-        topCategorySelectView.snp.makeConstraints {
-            $0.top.equalTo(mainTopView.snp.bottom)
-            $0.height.equalTo(mainTopViewHeight)
-            $0.leading.trailing.equalTo(self.safeAreaLayoutGuide)
+        topCategorySelectSegControl.snp.makeConstraints {
+            $0.top.equalTo(safeGuide).offset(50)
+            $0.height.equalTo(MainConstraints.topSelectCategorySegHeight)
+            $0.leading.trailing.equalTo(safeGuide)
+        }
+        
+        buttomView.snp.makeConstraints {
+            $0.top.equalTo(topCategorySelectSegControl.snp.bottom).offset(-1)
+            $0.leading.trailing.equalToSuperview()
+            $0.height.equalTo(1)
+        }
+        
+        tableView.snp.makeConstraints {
+            $0.top.equalTo(safeGuide).offset(MainConstraints.mainTableViewHeihgt)
+            $0.leading.trailing.bottom.equalTo(safeGuide)
         }
     }
 }

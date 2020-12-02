@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C71438D1257671C400404139 /* CommonUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71438D0257671C400404139 /* CommonUI.swift */; };
 		C71438D42576734300404139 /* MainTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71438D32576734300404139 /* MainTopView.swift */; };
+		C729E7E525771B54004105F2 /* MainTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C729E7E425771B54004105F2 /* MainTableHeaderView.swift */; };
 		C738D1B32576538E00A0D01B /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C738D1B22576538E00A0D01B /* RxSwift */; };
 		C738D1B52576538E00A0D01B /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = C738D1B42576538E00A0D01B /* RxCocoa */; };
 		C738D1B72576538E00A0D01B /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = C738D1B62576538E00A0D01B /* RxRelay */; };
@@ -22,7 +23,9 @@
 		C75541D4257669D40085BCEF /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75541D3257669D40085BCEF /* MainView.swift */; };
 		C75541D825766A790085BCEF /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = C75541D725766A790085BCEF /* Then */; };
 		C75541DC25766D450085BCEF /* KOTRA_BOLD.otf in Resources */ = {isa = PBXBuildFile; fileRef = C75541DB25766D3E0085BCEF /* KOTRA_BOLD.otf */; };
-		C757CB6D25768F1F00DEC1D9 /* TopCategorySelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C757CB6C25768F1F00DEC1D9 /* TopCategorySelectView.swift */; };
+		C757CB732577128800DEC1D9 /* MainConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = C757CB722577128800DEC1D9 /* MainConstraints.swift */; };
+		C757CB782577145900DEC1D9 /* UISegmentControl+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C757CB772577145900DEC1D9 /* UISegmentControl+Extension.swift */; };
+		C757CB7C2577150200DEC1D9 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C757CB7B2577150200DEC1D9 /* UIImage+Extension.swift */; };
 		C7C47D142576503C006CEADC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C47D132576503C006CEADC /* AppDelegate.swift */; };
 		C7C47D1B2576503C006CEADC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7C47D192576503C006CEADC /* Main.storyboard */; };
 		C7C47D1D2576503E006CEADC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7C47D1C2576503E006CEADC /* Assets.xcassets */; };
@@ -33,6 +36,7 @@
 /* Begin PBXFileReference section */
 		C71438D0257671C400404139 /* CommonUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonUI.swift; sourceTree = "<group>"; };
 		C71438D32576734300404139 /* MainTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTopView.swift; sourceTree = "<group>"; };
+		C729E7E425771B54004105F2 /* MainTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableHeaderView.swift; sourceTree = "<group>"; };
 		C738D1BE2576545900A0D01B /* CustomTapBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTapBar.swift; sourceTree = "<group>"; };
 		C738D1C52576554C00A0D01B /* CollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionVC.swift; sourceTree = "<group>"; };
 		C738D1C92576557500A0D01B /* SelectItemVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectItemVC.swift; sourceTree = "<group>"; };
@@ -41,7 +45,9 @@
 		C738D1D42576562500A0D01B /* CustomTapBarIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTapBarIcon.swift; sourceTree = "<group>"; };
 		C75541D3257669D40085BCEF /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		C75541DB25766D3E0085BCEF /* KOTRA_BOLD.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = KOTRA_BOLD.otf; sourceTree = "<group>"; };
-		C757CB6C25768F1F00DEC1D9 /* TopCategorySelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopCategorySelectView.swift; sourceTree = "<group>"; };
+		C757CB722577128800DEC1D9 /* MainConstraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainConstraints.swift; sourceTree = "<group>"; };
+		C757CB772577145900DEC1D9 /* UISegmentControl+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISegmentControl+Extension.swift"; sourceTree = "<group>"; };
+		C757CB7B2577150200DEC1D9 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		C7C47D102576503C006CEADC /* zigzegClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zigzegClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7C47D132576503C006CEADC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7C47D1A2576503C006CEADC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -72,7 +78,7 @@
 			children = (
 				C75541D3257669D40085BCEF /* MainView.swift */,
 				C71438D32576734300404139 /* MainTopView.swift */,
-				C757CB6C25768F1F00DEC1D9 /* TopCategorySelectView.swift */,
+				C729E7E425771B54004105F2 /* MainTableHeaderView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -113,7 +119,6 @@
 			isa = PBXGroup;
 			children = (
 				C75541DA25766D230085BCEF /* Font */,
-				C738D1D42576562500A0D01B /* CustomTapBarIcon.swift */,
 				C71438D0257671C400404139 /* CommonUI.swift */,
 			);
 			path = Utility;
@@ -125,6 +130,40 @@
 				C75541DB25766D3E0085BCEF /* KOTRA_BOLD.otf */,
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		C757CB6F257694C100DEC1D9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C7C47D2D25765207006CEADC /* MainVC.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		C757CB712577125D00DEC1D9 /* Constraints */ = {
+			isa = PBXGroup;
+			children = (
+				C757CB722577128800DEC1D9 /* MainConstraints.swift */,
+			);
+			path = Constraints;
+			sourceTree = "<group>";
+		};
+		C757CB762577144900DEC1D9 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C757CB772577145900DEC1D9 /* UISegmentControl+Extension.swift */,
+				C757CB7B2577150200DEC1D9 /* UIImage+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		C757CB7E2577155600DEC1D9 /* CustomTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				C738D1D42576562500A0D01B /* CustomTapBarIcon.swift */,
+				C738D1BE2576545900A0D01B /* CustomTapBar.swift */,
+			);
+			path = CustomTabBar;
 			sourceTree = "<group>";
 		};
 		C7C47D072576503C006CEADC = {
@@ -147,12 +186,13 @@
 			isa = PBXGroup;
 			children = (
 				C7C47D132576503C006CEADC /* AppDelegate.swift */,
-				C738D1BE2576545900A0D01B /* CustomTapBar.swift */,
+				C757CB7E2577155600DEC1D9 /* CustomTabBar */,
 				C7C47D2C257651F7006CEADC /* Main */,
 				C738D1C1257654FF00A0D01B /* Store */,
 				C738D1C22576552400A0D01B /* Collection */,
 				C738D1C32576552C00A0D01B /* SelectItem */,
 				C738D1C42576553700A0D01B /* MyPage */,
+				C757CB762577144900DEC1D9 /* Extension */,
 				C738D1D32576560500A0D01B /* Utility */,
 				C7C47D212576503E006CEADC /* Info.plist */,
 				C7C47D192576503C006CEADC /* Main.storyboard */,
@@ -165,8 +205,9 @@
 		C7C47D2C257651F7006CEADC /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				C757CB712577125D00DEC1D9 /* Constraints */,
+				C757CB6F257694C100DEC1D9 /* ViewController */,
 				C71438D625768D1700404139 /* View */,
-				C7C47D2D25765207006CEADC /* MainVC.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -255,15 +296,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				C738D1CA2576557500A0D01B /* SelectItemVC.swift in Sources */,
+				C757CB7C2577150200DEC1D9 /* UIImage+Extension.swift in Sources */,
 				C75541D4257669D40085BCEF /* MainView.swift in Sources */,
-				C757CB6D25768F1F00DEC1D9 /* TopCategorySelectView.swift in Sources */,
+				C757CB782577145900DEC1D9 /* UISegmentControl+Extension.swift in Sources */,
 				C738D1D1257655C100A0D01B /* StoreVC.swift in Sources */,
 				C738D1BF2576545900A0D01B /* CustomTapBar.swift in Sources */,
 				C738D1CD2576559D00A0D01B /* MyPageVC.swift in Sources */,
 				C7C47D142576503C006CEADC /* AppDelegate.swift in Sources */,
 				C71438D1257671C400404139 /* CommonUI.swift in Sources */,
+				C729E7E525771B54004105F2 /* MainTableHeaderView.swift in Sources */,
 				C71438D42576734300404139 /* MainTopView.swift in Sources */,
 				C738D1C62576554C00A0D01B /* CollectionVC.swift in Sources */,
+				C757CB732577128800DEC1D9 /* MainConstraints.swift in Sources */,
 				C7C47D2E25765207006CEADC /* MainVC.swift in Sources */,
 				C738D1D52576562500A0D01B /* CustomTapBarIcon.swift in Sources */,
 			);
